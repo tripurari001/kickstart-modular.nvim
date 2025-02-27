@@ -135,6 +135,22 @@ return {
 
         stylua = {}, -- Used to format Lua code
 
+        ts_ls = {},
+        vimls = {},
+        html = {},
+        cssls = {},
+        pyright = {},
+        clangd = {},
+        dockerls = {},
+        marksman = {},
+        rust_analyzer = {},
+        svelte = {},
+        eslint = {},
+        tailwindcss = {},
+        biome = {},
+        bashls = {},
+        protols = {},
+
         -- Special Lua Config, as recommended by neovim help docs
         lua_ls = {
           on_init = function(client)
