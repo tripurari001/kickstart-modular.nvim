@@ -219,9 +219,21 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        -- ts_ls = {},
-        --
-
+        ts_ls = {},
+        vimls = {},
+        html = {},
+        cssls = {},
+        pyright = {},
+        clangd = {},
+        dockerls = {},
+        marksman = {},
+        rust_analyzer = {},
+        svelte = {},
+        eslint = {},
+        tailwindcss = {},
+        biome = {},
+        bashls = {},
+        protols = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
