@@ -3,18 +3,26 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+
   {
     'ibhagwan/fzf-lua',
     -- optional for icon support
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     -- or if using mini.icons/mini.nvim
     -- dependencies = { "echasnovski/mini.icons" },
+    cmd = 'FzfLua',
+    keys = {
+      { '<leader>sf', ':FzfLua files<CR>', desc = '[S]earch [F]iles', silent = true },
+    },
+  },
+
+  {
+    'natecraddock/workspaces.nvim',
     config = function()
-      require('fzf-lua').setup {}
-      local fzf = require 'fzf-lua'
-      vim.keymap.set('n', '<leader>sf', function()
-        fzf.files()
-      end, { desc = '[S]earch [F]iles' })
+      require('workspaces').setup()
+
+      vim.keymap.set('n', '<leader>wl', ':Telescope workspaces<cr>', { desc = '[W]orkspaces [L]ist' })
+      vim.keymap.set('n', '<leader>wa', ':WorkspacesAdd<space>', { desc = '[W]orkspaces [A]dd' })
     end,
   },
 }
