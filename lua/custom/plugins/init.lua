@@ -33,6 +33,21 @@ return {
     'tpope/vim-fugitive',
     cmd = { 'Git', 'G' },
   },
+
+  {
+    'greggh/claude-code.nvim',
+    dependencies = {
+      'nvim-lua/plenary.nvim', -- Required for git operations
+    },
+    config = function()
+      require('claude-code').setup {
+        command = 'aifx agent run claude', -- Command used to launch Claude Code
+        window = {
+          position = 'vertical',
+        },
+      }
+    end,
+  },
 }
 
 -- vim: ts=2 sts=2 sw=2 et
