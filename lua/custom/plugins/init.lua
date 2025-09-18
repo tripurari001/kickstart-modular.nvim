@@ -28,6 +28,11 @@ return {
       vim.keymap.set('n', '<leader>wa', ':WorkspacesAdd<space>', { desc = '[W]orkspaces [A]dd' })
     end,
   },
+
+  {
+    'tpope/vim-fugitive',
+    cmd = { 'Git', 'G' },
+  },
 }
 
 -- vim: ts=2 sts=2 sw=2 et

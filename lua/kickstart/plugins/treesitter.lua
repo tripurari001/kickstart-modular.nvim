@@ -19,6 +19,7 @@ return {
         'luadoc',
         'make',
         'python',
+        'proto',
         'query',
         'regex',
         'rust',
