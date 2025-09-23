@@ -46,11 +46,25 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+vim.keymap.set('t', '<C-h>', '<C-\\><C-n><C-w><C-h>', { desc = 'Terminal Move focus to the left window' })
+vim.keymap.set('t', '<C-l>', '<C-\\><C-n><C-w><C-l>', { desc = 'Terminal Move focus to the right window' })
+vim.keymap.set('t', '<C-j>', '<C-\\><C-n><C-w><C-j>', { desc = 'Terminal Move focus to the lower window' })
+vim.keymap.set('t', '<C-k>', '<C-\\><C-n><C-w><C-k>', { desc = 'Terminal Move focus to the upper window' })
+
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
 -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
+
+-- " Easier copy/pasting to/from OS clipboard
+vim.keymap.set('n', 'gy', '"*y', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('v', 'gy', '"*y', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('n', 'gp', '"*p', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('v', 'gp', '"*p', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('n', 'gP', '"*P', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('v', 'gP', '"*P', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('n', 'gY', '"*Y', { desc = 'Copy to OS clipboard' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
