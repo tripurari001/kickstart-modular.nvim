@@ -135,6 +135,7 @@ return {
         stylua = {}, -- Used to format Lua code
 
         buf = {},
+        tsgo = {},
         ts_ls = {},
         vimls = {},
         html = {},
