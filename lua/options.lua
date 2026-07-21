@@ -82,3 +82,12 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 -- vim: ts=2 sts=2 sw=2 et
+
+
+--- User config ---
+
+-- user vertical diff when opening
+vim.o.diffopt = vim.o.diffopt .. ",vertical"
+
+-- use empty space in diffs
+vim.opt.fillchars = vim.opt.fillchars + 'diff: '

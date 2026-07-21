@@ -66,13 +66,13 @@ vim.keymap.set('t', '<C-k>', '<C-\\><C-n><C-w><C-k>', { desc = 'Terminal Move fo
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
 -- " Easier copy/pasting to/from OS clipboard
-vim.keymap.set('n', 'gy', '"*y', { desc = 'Copy to OS clipboard' })
-vim.keymap.set('v', 'gy', '"*y', { desc = 'Copy to OS clipboard' })
-vim.keymap.set('n', 'gp', '"*p', { desc = 'Copy to OS clipboard' })
-vim.keymap.set('v', 'gp', '"*p', { desc = 'Copy to OS clipboard' })
-vim.keymap.set('n', 'gP', '"*P', { desc = 'Copy to OS clipboard' })
-vim.keymap.set('v', 'gP', '"*P', { desc = 'Copy to OS clipboard' })
-vim.keymap.set('n', 'gY', '"*Y', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('n', 'gy', '"+y', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('v', 'gy', '"+y', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('n', 'gp', '"+p', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('v', 'gp', '"+p', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('n', 'gP', '"+P', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('v', 'gP', '"+P', { desc = 'Copy to OS clipboard' })
+vim.keymap.set('n', 'gY', '"+Y', { desc = 'Copy to OS clipboard' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
