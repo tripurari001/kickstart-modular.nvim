@@ -10,7 +10,7 @@ require('snacks').setup({
 
 
 -- fzf-lua
-vim.pack.add { 
+vim.pack.add {
   'https://github.com/nvim-tree/nvim-web-devicons',
   'https://github.com/ibhagwan/fzf-lua'
 }
@@ -19,10 +19,6 @@ vim.keymap.set('n', '<leader>sf', ':FzfLua files<CR>', {
   desc = '[S]earch [F]iles',
   silent = true,
 })
-
-
--- fugitive
-vim.pack.add { 'https://github.com/tpope/vim-fugitive' }
 
 
 -- workspaces.nvim
@@ -35,16 +31,3 @@ vim.keymap.set('n', '<leader>wl', ':Telescope workspaces<cr>', {
 vim.keymap.set('n', '<leader>wa', ':WorkspacesAdd<space>', {
   desc = '[W]orkspaces [A]dd',
 })
-
-
--- Diff syntax hylighting
-vim.pack.add({
-  'https://github.com/barrettruth/diffs.nvim',
-})
-
-vim.g.diffs = {
-  integrations = {
-    fugitive = true,
-    gitsigns = true,
-  }
-}

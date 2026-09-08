@@ -88,6 +88,7 @@ vim.o.confirm = true
 
 -- user vertical diff when opening
 vim.o.diffopt = vim.o.diffopt .. ",vertical"
+vim.o.diffopt = vim.o.diffopt:gsub('linematch:%d+', 'linematch:60')
 
 -- use empty space in diffs
 vim.opt.fillchars = vim.opt.fillchars + 'diff: '

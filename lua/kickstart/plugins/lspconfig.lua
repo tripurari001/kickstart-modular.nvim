@@ -113,7 +113,7 @@ local servers = {
   --
   -- But for many setups, the LSP (`ts_ls`) will work just fine
   buf = {},
-  tsgo = {},
+  tsc = {},
   vimls = {},
   html = {},
   cssls = {},
