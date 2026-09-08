@@ -14,9 +14,9 @@
       "rev": "016802de402556da54c36bd7359b441266b01cdd",
       "src": "https://github.com/stevearc/conform.nvim"
     },
-    "diffs.nvim": {
-      "rev": "f6567df7aee5ff3ec7e53a59e7f892ae3f9dcd02",
-      "src": "https://github.com/barrettruth/diffs.nvim"
+    "diffbandit.nvim": {
+      "rev": "546505d6b33a8e973440a0af943be0c105480a05",
+      "src": "https://github.com/CoreyKaylor/diffbandit.nvim"
     },
     "fidget.nvim": {
       "rev": "9e0201673e08e997e7cf52afca5565c70bd117f3",
